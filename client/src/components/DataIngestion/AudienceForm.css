@@ -1,0 +1,110 @@
+/* Apply your color palette */
+.centered-container {
+  background-color: #1E3E62;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.heading {
+  font-size: 2rem;
+  text-align: center;
+  color: #FF6500;
+}
+
+.form-container {
+  background-color: #0B192C;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.rules-container {
+  margin-bottom: 20px;
+}
+
+.rule-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #1E3E62;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #FF6500;
+}
+
+.rule-field,
+.rule-operator-select,
+.rule-value-input,
+.message-input,
+.logical-operator-select {
+  background-color: #000000;
+  color: white;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #FF6500;
+  margin: 5px;
+  flex-grow: 1;
+}
+
+button {
+  background-color: #FF6500;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+.add-rule-button {
+  background-color: #FF6500;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+.check-audience {
+  margin-top: 20px;
+}
+
+.audience-size {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+.error-message {
+  color: #f44336;
+  font-size: 0.875rem;
+  margin-top: 5px;
+}
+
+.submit-button {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.remove-button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.remove-button:hover {
+  background-color: #d32f2f;
+}
