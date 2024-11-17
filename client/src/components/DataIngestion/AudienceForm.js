@@ -29,7 +29,7 @@ const AudienceForm = () => {
 
   const handleCheckAudienceSize = async (values) => {
     try {
-      const response = await axios.post('http://localhost:5000/api/campaigns/check-audience-size', values);
+      const response = await axios.post(`${process.env.REACT_APP_BASE_URL}/api/campaigns/check-audience-size`, values);
       setAudienceSize(response.data.audienceSize);
     } catch (error) {
       console.error('Error checking audience size', error.response.data);
@@ -38,7 +38,7 @@ const AudienceForm = () => {
 
   const handleSubmit = async (values, { setSubmitting }) => {
     try {
-      await axios.post('http://localhost:5000/api/campaigns/create-audience', values);
+      await axios.post(`${process.env.REACT_APP_BASE_URL}/api/campaigns/create-audience`, values);
       alert('Campaign created successfully');
       navigate('/home/audience');
     } catch (error) {
